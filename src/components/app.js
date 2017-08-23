@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import SearchBar from './searchBar';
 import Swatch from './colorSwatch';
 
-class App extends React.Component{
+class Wrapper extends React.Component{
   render() {
     return (
       <div>
@@ -14,4 +14,4 @@ class App extends React.Component{
   };
 }
 
-export default App;
+export default Wrapper;
