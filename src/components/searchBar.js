@@ -1,5 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import axios from 'axios';
+import { GeocoderApiCall } from './utilities';
 
 class SearchBar extends React.Component{
   constructor(props) {
@@ -18,10 +20,9 @@ class SearchBar extends React.Component{
     }
 
     handleSubmit(event) {
-      alert('The City was submitted: ' + this.state.address );
+      GeocoderApiCall(this.state.address)
       event.preventDefault();
     }
-
 
   render() {
     return (
